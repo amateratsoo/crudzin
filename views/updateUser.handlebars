@@ -1,10 +1,10 @@
-<form action="/new-user" method="POST">
+<form action="/save-user/{{id}}" method="POST">
 
   <div class="form-container">
 
     <div class="input-field">
 
-      <label for="name">Seu nome</label>
+      <label for="name">Seu novo nome</label>
       <input type="text" name="name" id="name" autocomplete="off" />
 
     </div>
@@ -12,7 +12,7 @@
 
     <div class="input-field">
 
-      <label for="password">Sua palavra-passe</label>
+      <label for="password">Sua nova palavra-passe</label>
       <input type="password" name="password" id="password" autocomplete="off" />
 
     </div>
@@ -20,6 +20,6 @@
   </div>
 
 
-  <button type="submit">Cadastrar-se</button>
+  <button type="submit">Atualizar</button>
 
 </form>

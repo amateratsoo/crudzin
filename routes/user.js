@@ -35,4 +35,39 @@ router.get('/all-users', async (req, res) => {
 });
 
 
+router.get('/update-user/:id', (req, res) => {
+
+  res.render('updateUser', { id: req.params.id });
+
+});
+
+
+router.post('/save-user/:id', async (req, res) => {
+
+  const newUserData = req.body;
+  const id = req.params.id;
+
+  await Users.update({
+
+    name: newUserData.name,
+    password: newUserData.password
+
+  }, 
+  
+  {
+
+    where: {
+
+      id: id
+
+    }
+
+  });
+
+
+  res.redirect('http://localhost:3001/all-users');
+
+});
+
+
 module.exports = router;
