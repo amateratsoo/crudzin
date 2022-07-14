@@ -1,0 +1,18 @@
+{
+  "name": "crudzin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.1",
+    "express-handlebars": "^5.0.0",
+    "nodemon": "^2.0.19",
+    "sequelize": "^6.21.3"
+  }
+}
