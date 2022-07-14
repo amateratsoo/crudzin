@@ -21,7 +21,16 @@ router.post('/new-user', async (req, res) => {
 
   })
 
-  res.redirect('http://localhost:3001/create-user');
+  res.redirect('http://localhost:3001/all-users');
+
+});
+
+
+router.get('/all-users', async (req, res) => {
+
+  const allUsers = await Users.findAll();
+  
+  res.render('allUsers', { allUsers });
 
 });
 

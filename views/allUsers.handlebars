@@ -1,0 +1,28 @@
+<header>
+
+  <h1>👨‍🚀 crudzin :D</h1>
+
+</header>
+
+{{#each allUsers}}
+
+  <div class="card">
+
+      <div class="username">
+        
+        <h1>{{this.dataValues.name}}</h1>
+        
+      </div>
+
+
+      <div class="buttons">
+
+        <button class="delete-btn">deletar</button>
+
+        <button class="save-btn">atualizar</button>
+        
+      </div>
+
+  </div>
+
+{{/each}}
