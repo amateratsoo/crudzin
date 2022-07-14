@@ -70,4 +70,24 @@ router.post('/save-user/:id', async (req, res) => {
 });
 
 
+router.get('/delete-user/:id', async (req, res) => {
+
+  const id = req.params.id;
+
+  await Users.destroy({
+
+    where: {
+
+      id: id
+
+    }
+
+  });
+
+
+  res.redirect('http://localhost:3001/all-users');
+
+});
+
+
 module.exports = router;

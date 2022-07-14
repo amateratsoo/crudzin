@@ -13,7 +13,7 @@
   
         <div class="buttons">
   
-          <a href=""><button class="delete-btn">deletar</button></a>
+          <a href="delete-user/{{this.dataValues.id}}"><button class="delete-btn">deletar</button></a>
   
           <a href="update-user/{{this.dataValues.id}}"><button class="save-btn">atualizar</button></a>
   
@@ -22,5 +22,7 @@
     </div>
   
   {{/each}}
+
+  <a href="create-user" class="add-user"> + </a>
   
 </div>
